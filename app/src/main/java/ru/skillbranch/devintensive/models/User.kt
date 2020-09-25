@@ -22,7 +22,8 @@ data class User (
     )
 
     init {
-        println(this)
+        //println(this)
+        println("$firstName $lastName")
     }
 
     companion object Factory {
