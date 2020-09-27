@@ -1,7 +1,5 @@
 package ru.skillbranch.devintensive.utils
 
-import android.icu.text.Transliterator
-
 object Utils {
 
 
@@ -100,6 +98,7 @@ object Utils {
     }
     fun transliteration(payload: String, divider: String? = " ") : String?{
         var newText: String = ""
+
         for(char in payload) {
             if (char.equals(' ')) newText += divider
             else newText += toLatyan(char)
