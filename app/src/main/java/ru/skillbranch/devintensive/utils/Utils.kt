@@ -29,7 +29,7 @@ object Utils {
 
     }
 
-    private fun toLatyan(letter: Char) : String{
+    private fun toLatyan(letter: Char?) : String?{
         when(letter){
             'а' -> return "a"
             'А' -> return "A"
