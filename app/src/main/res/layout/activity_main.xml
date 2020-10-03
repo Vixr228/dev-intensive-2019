@@ -52,6 +52,7 @@
         />
         <!-- создать размеры кнопки -->
         <ImageView
+            android:id="@+id/iv_send"
             android:layout_width="@dimen/send_button_24"
             android:layout_height="@dimen/send_button_24"
             android:src="@drawable/ic_baseline_send_24"
