@@ -76,4 +76,9 @@ class ExampleUnitTest {
         println(Date().add(-400, TimeUnits.DAY).humanizeDiff()) //более года назад
         println(Date().add(400, TimeUnits.DAY).humanizeDiff()) //более чем через год
     }
+
+    @Test
+    fun test_Bender_listenAnswer(){
+
+    }
 }

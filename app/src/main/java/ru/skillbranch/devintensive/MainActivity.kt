@@ -1,5 +1,6 @@
 package ru.skillbranch.devintensive
 
+import android.app.Activity
 import android.graphics.Color
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
+import ru.skillbranch.devintensive.extinsions.hideKeyboard
 import ru.skillbranch.devintensive.models.Bender
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -97,6 +99,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val (r,g,b) = color
             benderImage.setColorFilter(Color.rgb(r,g,b), PorterDuff.Mode.MULTIPLY)
             textTxt.text = phrase
+            hideKeyboard()
         }
     }
 }
